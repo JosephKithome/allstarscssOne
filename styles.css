@@ -164,22 +164,6 @@ nav a:hover {
         align-items: center;
     }
 
-    .row {
-        flex-direction: column;
-        align-items: flex-start;
-        /* Align to the left */
-        padding: 1rem;
-    }
-
-    .hamburger {
-        margin-bottom: 1rem;
-    }
-
-    .nav-links {
-        display: none;
-        /* Initially hidden on small screens */
-    }
-
     .nav-links.show-nav {
         display: block;
         /* Show navigation when the toggleNav() function is called */
