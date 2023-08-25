@@ -10,16 +10,16 @@
 </head>
 
 <body>
-  <header>
-    <h1>My CSS Showcase</h1>
-  </header>
-
-  <nav>
+  <header class="row">
     <div class="hamburger" onclick="toggleNav()">
       <div></div>
       <div></div>
       <div></div>
     </div>
+    <h1>My CSS Showcase</h1>
+  </header>
+
+  <nav>
     <div class="nav-links">
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -96,7 +96,7 @@
       const navLinks = document.querySelector('.nav-links');
       const hamburger = document.querySelector('.hamburger');
       navLinks.classList.toggle('show-nav');
-      hamburger.classList.toggle('show-nav');
+      hamburger.classList.toggle('active'); // Toggles the active style for the hamburger
     }
 
     function toggleDescription(button) {

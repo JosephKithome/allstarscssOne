@@ -8,6 +8,16 @@
     background-color: #f4f4f4;
   }
 
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
   header,
   footer {
     background-color: var(--primary-color);
