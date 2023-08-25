@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Responsive Animated Webpage</title>
+</head>
+
+<body>
+  <header>
+    <h1>My CSS Showcase</h1>
+  </header>
+
+  <nav>
+    <div class="hamburger" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <h2>UI/UX Designer</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+
+      </div>
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/R.6c7b274fa33963e171b8c514bdd642f1?rik=ZvoknZ5nSTV53A&pid=ImgRaw&r=0"
+          alt="Image Placeholder">
+        <h2>Frontend Engineer</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+      </div>
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <h2>Backend Engineer</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+      </div>
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <h2>Data Engineer</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+      </div>
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <h2>Devops Engineer</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+      </div>
+      <div class="card fade-in">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <h2>Card 6</h2>
+        <p class="description">
+          </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
+          such as websites, applications, and software. They focus on creating a positive and engaging interaction
+          between users and the product.</p>
+        <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; Joseph Kithome 2023. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
+      navLinks.classList.toggle('show-nav');
+      hamburger.classList.toggle('show-nav');
+    }
+
+    function toggleDescription(button) {
+      const card = button.closest('.card');
+      const description = card.querySelector('.description');
+      description.classList.toggle('show-description');
+    }
+  </script>
+</body>
+
+</html>
