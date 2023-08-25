@@ -30,7 +30,7 @@
   <main>
     <div class="container">
       <div class="card fade-in">
-        <img src="https://wallpapercave.com/dwp1x/wp9775516.png" alt="Image Placeholder">
+        <img src="https://wallpapercave.com/dwp1x/wp9775516.png" alt="Image Placeholder" onclick="toggleZoom(this)">
         <h2>UI/UX Designer</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -41,7 +41,7 @@
       </div>
       <div class="card fade-in">
         <img src="https://th.bing.com/th/id/R.6c7b274fa33963e171b8c514bdd642f1?rik=ZvoknZ5nSTV53A&pid=ImgRaw&r=0"
-          alt="Image Placeholder">
+          alt="Image Placeholder" onclick="toggleZoom(this)">
         <h2>Frontend Engineer</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -52,7 +52,7 @@
       <div class="card fade-in">
         <img
           src="https://ded9.com/wp-content/uploads/2021/03/backenddeveloper-2502825a14ff440eb775dc4244e7ed4d-1024x683.png"
-          alt="Image Placeholder">
+          alt="Image Placeholder" onclick="toggleZoom(this)">
         <h2>Backend Engineer</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -61,7 +61,8 @@
         <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
       </div>
       <div class="card fade-in">
-        <img src="https://th.bing.com/th/id/OIP.MiED0XIp51HYAXSiA47eXwHaEK?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <img src="https://th.bing.com/th/id/OIP.MiED0XIp51HYAXSiA47eXwHaEK?pid=ImgDet&rs=1" alt="Image Placeholder"
+          onclick="toggleZoom(this)">
         <h2>Data Engineer</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -70,7 +71,8 @@
         <button class="slide-button" onclick="toggleDescription(this)">Explore</button>
       </div>
       <div class="card fade-in">
-        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder">
+        <img src="https://th.bing.com/th/id/OIP.dMYz1ysbhlRoVJQ5UqwL_gHaFj?pid=ImgDet&rs=1" alt="Image Placeholder"
+          onclick="toggleZoom(this)">
         <h2>Devops Engineer</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -80,7 +82,7 @@
       </div>
       <div class="card fade-in">
         <img src="https://th.bing.com/th/id/R.feb74707d2d3383c540c5825e5095f04?rik=HTnmfRbihXMPHQ&pid=ImgRaw&r=0"
-          alt="Image Placeholder">
+          alt="Image Placeholder" onclick="toggleZoom(this)">
         <h2>Project Management</h2>
         <p class="description">
           </pclass>UI (User Interface) and UX (User Experience) are two critical aspects of designing digital products,
@@ -106,6 +108,10 @@
       const card = button.closest('.card');
       const description = card.querySelector('.description');
       description.classList.toggle('show-description');
+    }
+
+    function toggleZoom(image) {
+      image.classList.toggle('zoomed');
     }
   </script>
 </body>
